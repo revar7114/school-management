@@ -14,21 +14,26 @@ public class SchoolController {
 		List<Integer> cars = new ArrayList<>();
 		Integer nexa = 1;
 		cars.add(2);
-		cars.add(3);
+		cars.add(1);
 		cars.add(nexa);
-		for(Integer i:cars) {
-		if(i.equals(nexa));
-	    System.out.println(i);
-	    else {
-	    System.out.println("nexa");
-		//one line comment
+		List<Integer> filteredCars = new ArrayList<>();
+		
+//		for(Integer i:cars) {
+//		if(i.equals(nexa)) {
+//			filteredCars.add(i);
+//		} 
+	
+	   // System.out.println(i);
+	   //else {
+	   // System.out.println("nexa");
+	   //one line comment
 /**		multi line
 		comment**/
-		}
-		}
-		List<Integer> latestCars = cars.stream().filter(r -> r.equals(nexa)).collect(Collectors.toList());
+		//}
+//		}
+	 List<Integer> latestCars = cars.stream().filter(r -> r.equals(nexa)).collect(Collectors.toList());
 
 		return latestCars;
-
+//		return filteredCars;
 	}
 }
