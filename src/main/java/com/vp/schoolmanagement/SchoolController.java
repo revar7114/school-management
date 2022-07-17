@@ -16,6 +16,13 @@ public class SchoolController {
 		cars.add(2);
 		cars.add(3);
 		cars.add(nexa);
+		for(Integer i:cars) {
+		if(i.equals(nexa));
+	    System.out.println(i);
+	    else {
+	    System.out.println("nexa");
+		}
+		}
 		List<Integer> latestCars = cars.stream().filter(r -> r.equals(nexa)).collect(Collectors.toList());
 
 		return latestCars;
