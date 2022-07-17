@@ -21,6 +21,9 @@ public class SchoolController {
 	    System.out.println(i);
 	    else {
 	    System.out.println("nexa");
+		//one line comment
+/**		multi line
+		comment**/
 		}
 		}
 		List<Integer> latestCars = cars.stream().filter(r -> r.equals(nexa)).collect(Collectors.toList());
